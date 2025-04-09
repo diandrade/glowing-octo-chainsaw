@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFE8C5;
+}
+
+ul{
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+li a{
+    text-decoration: none;
+    color: #97BE5A;
+    font-weight: bold;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chamada-principal{
+    margin-left: 30%;
+    margin-top: 2rem;
+}
+
+#sobre{
+    margin-top: 1.5rem;
+    padding: 0 10rem 0 10rem;
+}
+
+#como-chegar{
+    margin-top: 1.5rem;
+    padding: 0 10rem 0 10rem;
+}
+
+#galeria{
+    margin-top: 1.5rem;
+}
+
+#contato{
+    margin-top: 1.5rem;
+}
+
+#sobre p{
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+#como-chegar p{
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+#como-chegar a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#galeria img{
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#contato p{
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-container-1{
+    display: flex;
+    gap: 10px;
+    padding: 1rem 1rem 0.5rem 1rem;
+    margin-right: 1.5rem;
+}
+
+.gallery-container-2{
+    display: flex;
+    gap: 10px;
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-right: 1.5rem;
+}
