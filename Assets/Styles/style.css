@@ -1,94 +1,100 @@
+/* Reset and Styles */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #FFE8C5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ul{
-    margin-top: 1rem;
-    list-style: none;
+body {
+  background-color: #fff8dc;
+  color: #4a4a4a;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation */
+
+ul {
+  margin-top: 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+}
+
+a {
     display: flex;
-    justify-content: space-around;
-}
-
-li a{
+    justify-content: center;
     text-decoration: none;
-    color: #97BE5A;
-    font-weight: bold;
+    color: #6c0345;
 }
 
-h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+li a {
+  text-decoration: none;
+  color: #dc6b19;
+  font-weight: bold;
 }
 
-#chamada-principal{
-    margin-left: 30%;
-    margin-top: 2rem;
+li a:hover {
+  color: #f7c566;
 }
 
-#sobre{
-    margin-top: 1.5rem;
-    padding: 0 10rem 0 10rem;
+/*Typography*/
+
+h1 {
+  font-style: italic;
+  font-size: 48px;
+  font-family: "Lora", serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  color: #6c0345;
 }
 
-#como-chegar{
-    margin-top: 1.5rem;
-    padding: 0 10rem 0 10rem;
+h2 {
+  font-family: "Playfair Display", serif;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  color: #dc6b19;;
 }
 
-#galeria{
-    margin-top: 1.5rem;
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
-#contato{
-    margin-top: 1.5rem;
-}
-
-#sobre p{
-    margin-top: 0.5rem;
-    text-align: center;
-}
-
-#como-chegar p{
-    margin-top: 0.5rem;
-    text-align: center;
-}
-
-#como-chegar a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#galeria img{
-    width: 50%;
+img {
+    width: 45%;
+    max-width: 400px;
     height: auto;
-    display: inline-block;
-    margin-right: 10px;
+  }
+
+.section-container {
+  padding-right: 8rem;
+  padding-left: 8rem;
 }
 
-#contato p{
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.map-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.gallery-container-1{
-    display: flex;
-    gap: 10px;
-    padding: 1rem 1rem 0.5rem 1rem;
-    margin-right: 1.5rem;
+/* ===== Gallery Section ===== */
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 8rem; /* Matches your section-container padding */
 }
 
-.gallery-container-2{
-    display: flex;
-    gap: 10px;
-    padding: 0.5rem 1rem 1rem 1rem;
-    margin-right: 1.5rem;
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }

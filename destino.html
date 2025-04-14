@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página de Viagem</title>
     <link rel="stylesheet" href="/Assets/Styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Open+Sans:wght@300;400&family=Italianno&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <ul>
-        <li><a href="#">About the place</a></li>
-        <li><a href="#">How to get here</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">About</a></li>
+          <li><a href="#galeria">Gallery</a></li>
+          <li><a href="#contato">Contact</a></li>
+        </ul>
       </ul>
-      <h1 id="chamada-principal">Benvenuti all'Hotel Modica Boutique</h1>
+      <h1 id="home">Benvenuti all'Hotel Modica Boutique</h1>
     </header>
-    <section id="sobre">
+    <section id="sobre" class="section-container">
       <h2>About</h2>
       <p>
         The Modica Boutique Hotel is a modern 4-star hotel where attention to
@@ -27,22 +35,28 @@
         escapes and relaxing family trips.
       </p>
     </section>
-    <section id="como-chegar">
+    <section id="como-encontrar" class="section-container">
       <h2>How to Find</h2>
-      <p>
-        From Catania (Airport or City): Take A18/E45 highway toward Siracusa.
-        Merge onto SS114 → SS115 (direction Ragusa/Modica). Exit at "Variante
-        SS115 21/D" – the hotel is near this exit. Travel time: ~1h 40min (100
-        km). From Ragusa: Follow SS115 toward Modica (~20 min, 15 km).
-      </p>
-      <p>Variante S.S. 115 nr. 21/D Modica 97015 (Rg) Italy</p>
-      <a href="http://bit.ly/4iZxOcL" target="_blank" rel="noopener noreferrer"
-        >Maps</a
-      >
+      <ul>
+        <li>
+          From Catania (Airport or City): Take A18/E45 highway toward Siracusa.
+        </li>
+        <li>Merge onto SS114 → SS115 (direction Ragusa/Modica).</li>
+        <li>Exit at "Variante SS115 21/D" – the hotel is near this exit.</li>
+      </ul>
+      <div class="map-container">
+        <p>Variante S.S. 115 nr. 21/D Modica 97015 (Rg) Italy</p>
+        <a
+          href="http://bit.ly/4iZxOcL"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Maps</a
+        >
+      </div>
     </section>
-    <section id="galeria">
+    <section id="galeria" class="gallery-container ">
       <h2>Gallery</h2>
-      <div class="gallery-container-1">
+      <div class="gallery-row"">
         <img
           src="/Assets/Img/beautiful-view-from-sicilian-town.jpg"
           alt="imagem-aerea-vista-cidade-noturno"
@@ -52,7 +66,7 @@
           alt="imagem-aerea-vista-oceano"
         />
       </div>
-      <div class="gallery-container-2">
+      <div class="gallery-row">
         <img src="/Assets/Img/sicilian-town.jpg" />
         <img
           src="/Assets/Img/clouded-day-in-sicilian-town.jpg"
@@ -60,7 +74,7 @@
         />
       </div>
     </section>
-    <section id="contato">
+    <section id="contato" class="section-container">
       <h2>Contact</h2>
       <p>
         Follow our&nbsp;<a href="https://instagram.com/yourprofile"
